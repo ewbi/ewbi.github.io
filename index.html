@@ -24,6 +24,23 @@
     footer {
       padding-block-start: 0px !important;
     }
+    .grid {
+      grid-row-gap: 0px;
+    }
+    .grid div ul {
+      margin-bottom: 0px;
+    }
+    .grid div:last-of-type {
+      margin-bottom: var(--pico-typography-spacing-vertical);
+    }
+    @media (min-width: 768px) {
+      .grid {
+        grid-row-gap: var(--pico-grid-row-gap);
+      }
+      .grid div:last-of-type {
+        margin-bottom: var(--pico-typography-spacing-vertical);
+      }
+    }
   </style>
   <title>ewbi</title>
 </head>
@@ -42,6 +59,11 @@
 
     <section id="gists" style="margin-bottom: 2.8rem">
       <h3>gists</h3>
+
+      <details>
+        <summary>ASP.NET Model Binding an Odd Dictionary Array </summary>
+        <script src="https://gist.github.com/ewbi/6ff2a4977c473634594978e9f4954d35.js"></script>
+      </details>
 
       <details>
         <summary>Excel Formula Parsing</summary>
@@ -65,19 +87,21 @@
       <div class="grid">
         <div>
           <ul>
-            <li>.NET <small>(C#/VB.NET)</small></li>
+            <li>.NET <small>(C#/VB.NET; Framework/Core)</small></li>
             <li>ASP.NET <small>(MVC/Razor/Web API; Classic ASP)</small></li>
-            <li>JavaScript/JSON</li>
+            <li>WinForms/XAML</li>
             <li>Office <small>(VSTO/web add-ins)</small></li>
             <li>SharePoint <small>(Graph SDK/PnP)</small></li>
-            <li>WinForms/XAML</li>
+            <li>Sitefinity (CMS)</li>
+            <li>JavaScript/JSON</li>
           </ul>
         </div>
         <div>
           <ul>
             <li>SQL Server</li>
+            <li>SQLite</li>
             <li>PostgreSQL</li>
-            <li>Entity Framework</li>
+            <li>Entity Framework/ADO.NET</li>
             <li>PICK/OpenInsight</li>
             <li>ODBC/OLEDB/ADO</li>
             <li>XML/XSLT</li>
@@ -91,7 +115,9 @@
       <div class="grid">
         <div>
           <ul>
+            <li>1693 Analytics, LLC</li>
             <li>Academy for Educational Development</li>
+            <li>Accessible Media Inc. (via Cypress Consulting)</li>
             <li>AgilQuest
             <li>American National Can</li>
             <li>American Nurses Association</li>
@@ -110,10 +136,12 @@
             <li>Mercer Human Resource Consulting</li>
             <li>National Information Clearinghouse for Children with Disabilities</li>
             <li>Northstar Consultants</li>
+            <li>Russell Investments (via Cypress Consulting)</li>
             <li>Scientific Ecology Group</li>
             <li>Udea Life</li>
             <li>United Federation of Doll Clubs</li>
             <li>VMG Healthcare Consultants</li>
+            <li>Washington, DC Office of Zoning</li>
           </ul>
         </div>
       </div>
